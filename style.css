@@ -1,0 +1,339 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #212121;
+    color: white;
+    margin: auto;
+
+}
+
+
+/* Styling the main container */
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    letter-spacing: 0.5px;
+    height: 80%;
+}
+
+img {
+    width: 50px;
+    vertical-align: middle;
+    border-style: none;
+    border-radius: 100%;
+}
+
+/* Styling the msg-header container */
+.msg-header {
+    /*border: 1px solid #ccc;*/
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border-bottom: none;
+    display: inline-block;
+    background-color: #2d2d2d;
+    margin: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Styling the profile picture */
+.msgimg {
+    border-color: #3c3c3c;
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 2%;
+    float: left;
+    margin: auto;
+}
+
+.container1 {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    float: left;
+    display: flex;
+    margin: 0;
+}
+
+/* styling user-name */
+.active {
+    width: 150px;
+    float: left;
+    color: black;
+    font-weight: bold;
+    margin: 0 0 0 5px;
+    height: 10%;
+
+}
+
+/* Styling the inbox */
+.chat-page {
+    padding: 0 0 50px 0;
+}
+
+.msg-inbox {
+    border: 1px solid #3c3c3c;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.chats {
+    padding: 0px 15px 0 25px;
+}
+
+.msg-page {
+    max-height: 500px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.msg-page::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.FormCSS {
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Styling the msg-bottom container */
+.msg-bottom {
+    border-top: 1px solid #3c3c3c;
+    position: relative;
+    height: 11%;
+    background-color: #2d2d2d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* From Uiverse.io by vinodjangid07 */
+.messageBox {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d2d2d;
+    padding: 0 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(63, 63, 63);
+}
+
+.messageBox:focus-within {
+    border: 1px solid rgb(110, 110, 110);
+}
+
+#messageInput {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    color: white;
+}
+
+#messageInput:focus~#sendButton svg path,
+#messageInput:valid~#sendButton svg path {
+    fill: #3c3c3c;
+    stroke: white;
+}
+
+#sendButton {
+    width: fit-content;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#sendButton svg {
+    height: 18px;
+    transition: all 0.3s;
+}
+
+#sendButton svg path {
+    transition: all 0.3s;
+}
+
+#sendButton:hover svg path {
+    fill: #3c3c3c;
+    stroke: #00ffbb;
+}
+
+/* Styling the avatar  */
+.received-chats-img {
+    border-color: #3c3c3c;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 100%;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: 0px;
+}
+
+.received-msg {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    vertical-align: top;
+    width: 92%;
+}
+
+.received-msg-inbox {
+    width: 57%;
+}
+
+.received-msg-inbox p {
+    background: whitesmoke none repeat scroll 0 0;
+    border-radius: 10px;
+    color: #646464;
+    font-size: 14px;
+    margin-left: 1rem;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 25%) 0px 5px 5px 2px;
+}
+
+p {
+    overflow-wrap: break-word;
+}
+
+/* Styling the msg-sent time  */
+.time {
+    color: #777;
+    display: block;
+    font-size: 12px;
+    margin: 8px 0 0;
+}
+
+.outgoing-chats {
+    overflow: hidden;
+    margin: 26px 20px;
+}
+
+.outgoing-chats-msg p {
+    background-color: #3a12ff;
+    background-image: linear-gradient(105deg, #8c42a3 0%, #639aff 60%, #639aff 100%);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 5px 2px;
+}
+
+.outgoing-chats-msg {
+    float: right;
+    width: 46%;
+}
+
+/* Styling the avatar */
+.outgoing-chats-img {
+    border-color: #3c3c3c;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 100%;
+    width: fit-content;
+    margin-right: 0px;
+    margin-left: auto;
+
+}
+
+@media only screen and (max-device-width: 850px) {
+
+    *,
+    .time {
+        font-size: 28px;
+    }
+
+    img {
+        width: 65px;
+    }
+
+    .msg-header {
+        height: fit-content;
+
+    }
+
+    .msg-page {
+        max-height: none;
+    }
+
+    .received-msg-inbox p {
+        font-size: 28px;
+    }
+
+    .outgoing-chats-msg p {
+
+        font-size: 28px;
+    }
+
+    .messageBox {
+        height: 80%;
+    }
+}
+
+@media only screen and (max-device-width: 450px) {
+
+    *,
+    .time {
+        font-size: 28px;
+    }
+
+    img {
+        width: 65px;
+    }
+
+    .messageBox {
+        height: 50%;
+    }
+
+    .msg-header {
+        height: fit-content;
+
+    }
+
+    .msg-page {
+        max-height: none;
+    }
+
+    .received-msg-inbox p {
+        font-size: 28px;
+    }
+
+    .outgoing-chats-msg p {
+        font-size: 28px;
+    }
+}
